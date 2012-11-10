@@ -10,6 +10,10 @@ set autoindent
 set incsearch
 "tabが対応する空白の数
 set tabstop=4 shiftwidth=4 expandtab
+"for ruby
+au BufNewFile,BufRead *.rhtml set nowrap tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.erb set nowrap tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.rb    set nowrap tabstop=2 shiftwidth=2
 "新しい行を作ったときに高度な自動インデントを行う
 set smartindent
 "入力補完時に、辞書ファイルも読み込む
