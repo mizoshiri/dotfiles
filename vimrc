@@ -22,7 +22,7 @@ cmap <c-x> <c-r>=expand('%:p:h')<cr>/
 "ファイル名(フルパス)を出力
 cmap <c-z> <c-r>=expand('%:p:r')<cr>
 
-" showing tab
+" showing tab, trail is showing 行末の余計なスペース
 set listchars=tab:>-,trail:-
 set list
 
