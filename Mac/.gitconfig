@@ -1,0 +1,23 @@
+[user]
+  name = Ayumi Mizoshiri
+  email = ayumi@sazae.com.au
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+
+[alias]
+  stat = status
+  s = status
+  co = checkout
+  b = branch
+  serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
+  pc = push origin HEAD
+  lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)— %cn%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+  lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%cD%C(reset) %C(bold green)(%cr)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %cn%C(reset)' --abbrev-commit
+  lg = !"git lg1"
+  prune-all = !git remote | xargs -n 1 git remote prune
+  d = difftool -t vimdiff
+  vimdiff = difftool -t vimdiff
