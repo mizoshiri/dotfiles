@@ -9,7 +9,7 @@ set autoindent
 "インクリメンタルサーチを行う
 set incsearch
 "tabが対応する空白の数
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rhtml set nowrap tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.erb set nowrap tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.rb    set nowrap tabstop=2 shiftwidth=2
