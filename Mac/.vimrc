@@ -27,7 +27,8 @@ set listchars=tab:>-,trail:-
 set list
 
 " pathogen.vim
-"https://github.com/tpope/vim-pathogen
+" need install by command
+" https://github.com/tpope/vim-pathogen
 call pathogen#infect()
 
 " autocomplete php
@@ -35,13 +36,18 @@ call pathogen#infect()
 
 " nerdtree
 " autocmd vimenter * NERDTree
+" https://github.com/scrooloose/nerdtree
+" $ cd ~/.vim/bundle
+" $ git clone https://github.com/scrooloose/nerdtree.git
 map <C-t> : NERDTreeToggle 
 
 
 "https://github.com/Shougo/neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
-:color jellybeans
+" mkdir ~/.vim/colors
+" mv jellybeans.vim ~/.vim/colors/
+":color jellybeans
 
 "https://github.com/tpope/vim-pathogen
 call pathogen#infect()
