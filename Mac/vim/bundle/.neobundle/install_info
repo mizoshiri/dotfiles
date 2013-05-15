@@ -1,0 +1,2 @@
+1.0
+{'neobundle.vim': {'checked_time': 1368586672, 'installed_uri': 'git://github.com/Shougo/neobundle.vim.git', 'updated_time': 1368586672}, 'syntastic': {'checked_time': 1368586687, 'installed_uri': 'git://github.com/scrooloose/syntastic.git', 'updated_time': '1368557280'}, 'ctrlp.vim': {'checked_time': 1368586687, 'installed_uri': 'git://github.com/kien/ctrlp.vim.git', 'updated_time': '1364271015'}}

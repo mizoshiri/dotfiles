@@ -1,3 +1,24 @@
+scriptencoding utf-8
+set nocompatible
+
+if has('vim_starting')
+  filetype plugin off
+  filetype indent off
+  execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
+   call neobundle#rc(expand('~/.vim/bundle'))
+endif
+
+NeoBundle 'git://github.com/kien/ctrlp.vim.git'
+NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
+NeoBundle 'git://github.com/scrooloose/syntastic.git'
+
+syntax on
+filetype plugin on
+filetype indent on
+
+" SSH クライアントの設定によってはマウスが使える（putty だと最初からいける）
+set mouse=n
+
 syntax on
 set number
 set ruler
@@ -27,8 +48,7 @@ set listchars=tab:>-,trail:-
 set list
 
 " pathogen.vim
-" need install by command
-" https://github.com/tpope/vim-pathogen
+"https://github.com/tpope/vim-pathogen
 call pathogen#infect()
 
 " autocomplete php
@@ -36,17 +56,12 @@ call pathogen#infect()
 
 " nerdtree
 " autocmd vimenter * NERDTree
-" https://github.com/scrooloose/nerdtree
-" $ cd ~/.vim/bundle
-" $ git clone https://github.com/scrooloose/nerdtree.git
 map <C-t> : NERDTreeToggle 
 
 
 "https://github.com/Shougo/neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
-" mkdir ~/.vim/colors
-" mv jellybeans.vim ~/.vim/colors/
 ":color jellybeans
 
 "https://github.com/tpope/vim-pathogen
@@ -56,3 +71,4 @@ call pathogen#infect()
 "http://prepro.wordpress.com/2012/06/07/vim%E3%81%A7coffeescript%E3%81%AE%E7%92%B0%E5%A2%83%E5%86%8D%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%9F%E3%82%89%E6%A9%9F%E8%83%BD%E3%81%8C%E5%BC%B7%E5%8C%96%E3%81%95%E3%82%8C%E3%81%A6%E3%81%A6%E3%83%93/
 "nnoremap <Leader>w :CoffeeCompile watch vert<CR>
 "au BufWritePost *.coffee silent CoffeeMake! -cb | cwindow | redraw!
+
