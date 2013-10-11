@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-My confs in Mac & Ubuntu
+*My confs in Mac & Ubuntu
