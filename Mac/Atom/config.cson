@@ -1,0 +1,28 @@
+"*":
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    fontSize: 14
+  core:
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
+  "exception-reporting":
+    userId: "58c3c2ec-682b-9ba4-922f-983440765126"
+  welcome:
+    showOnStartup: false
+  drupal:
+    fileTypesPhp: "module,install,inc,test"
+  "project-manager":
+    environmentSpecificProjects: true
+  "autocomplete-plus": {}
+  "autoclose-html": {}
+  'linter-rubocop':
+    'rubocopExecutablePath': "/Users/ayumi/.rbenv/shims/rubocop"
+  linter:
+    subtleLinterErrors: [
+      "bootlint"
+    ]
+
