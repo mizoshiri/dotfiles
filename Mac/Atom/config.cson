@@ -19,10 +19,20 @@
     environmentSpecificProjects: true
   "autocomplete-plus": {}
   "autoclose-html": {}
-  'linter-rubocop':
-    'rubocopExecutablePath': "/Users/ayumi/.rbenv/shims/rubocop"
+  "linter-rubocop":
+    rubocopExecutablePath: "/Users/ayumi/.rbenv/shims/rubocop"
   linter:
     subtleLinterErrors: [
       "bootlint"
     ]
+  "linter-erb":
+    erbExecutablePath: null
+    rubyOnRailsMode: false
+  'linter-php':
+    'phpExecutablePath': '/usr/bin/php' # php path. run 'which php' to find the path
+  "linter-phpcs":
+    phpcsExecutablePath: "/usr/bin/phpcs"
+    standard: "PSR2"
+    ignore: "*.blade.php,*.twig.php"
+    enableWarning: 1
 
